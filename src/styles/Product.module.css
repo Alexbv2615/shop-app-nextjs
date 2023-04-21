@@ -1,0 +1,77 @@
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* border: 2px solid red; */
+}
+
+.item {
+    box-shadow: 2px 2px 8px rgba(142, 141, 141, 0.477);
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 350px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+
+    transition: 0.5s ease;
+}
+
+.item:hover{
+    scale: calc(1.02);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.item h3 {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.page {
+    background-color: white;
+    
+    display: flex;
+    height: 475px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    
+    transform: scale(0);
+    animation: scale 0.3s ease forwards;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+    gap: 20px;
+    
+}
+
+.price {
+    font-size: 28px;
+    
+}
+
+.listItem{
+    display: flex;
+    gap: 10px;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 0;
+}
+
+.listItem h3 {
+    margin: 5px 0;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
